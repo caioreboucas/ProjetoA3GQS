@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(66, 72, 163, 0.308);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topo-logo{
+    margin: 50px;
+    color: rgb(119, 0, 255);
+}
+
+.colorLogo{
+    color: rgb(4, 4, 223);
+}
+
+.caixaLogin .img-login{
+    text-align: center;
+}
+
+.caixaLogin{
+    background-color: rgba(24, 22, 22, 0.21);
+    margin-bottom: 60px;
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 0 1em white;
+}
+
+.caixaLogin{
+    background-color: rgba(24, 22, 22, 0.21);
+    margin-bottom: 60px;
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 0 1em white;
+}
+
+h2{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.caixaLogin .campo input{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    background: transparent;
+    color: rgb(0 0 0);
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(4 4 223 / 37%);
+    margin-bottom: 25px;
+}
+
+.campo{
+    position: relative;
+}
+
+.caixaLogin .campo label{
+    position: absolute;
+    top: 0px;
+    bottom: 10px;
+    color: rgb(255 255 255);
+    transition: .2s;
+    pointer-events: none;
+}
+
+.caixaLogin .campo input:focus~label,
+.caixaLogin .campo input:valid~label{
+    top: -20px;
+    left: 0px;
+    color: rgb(119, 0, 255);
+    font-size: 12px;
+}
+
+.checkbox{
+    color: white;
+}
+
+.caixaLogin button{
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: black;
+}
+
+.suporte{
+    padding: 15px 0;
+    color: white;
+    text-decoration: underline;
+}
+
+.highText{
+    font-size: 15px;
+}
+
+.testeBotao{
+    align-self: flex-end;
+}
