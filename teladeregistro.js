@@ -20,6 +20,18 @@
     })
 // -------------- //
 
+//Botao número 3:
+//Este botão testa se a aplicação está funcional quando todas as exigências são atendidas.
+    document.getElementById("testeSucesso").addEventListener("click", ()=>{
+    document.getElementById("userReg").value="caio"
+    document.getElementById("pass1").value="testesucesso"
+    document.getElementById("pass2").value="testesucesso"
+    document.getElementById("ButtonRegister").click()
+    })
+// -------------- //
+
+//Condição para a aplicação funcionar.
+//É necessário que o campo user esteja preenchido. As senhas não podem estar vazias e devem ser iguais.
     document.getElementById("ButtonRegister").addEventListener("click", ()=>{
     var userReg = document.getElementById("userReg").value
     var pass1 = document.getElementById("pass1").value
