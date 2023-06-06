@@ -1,7 +1,7 @@
 //botões de testes para a area de registro.
 
 //Botão número 1:
-//Este botão testa se a a aplicação aceita um usuário sem preenchimento
+//Este botão testa se a aplicação aceita um usuário sem preenchimento
     document.getElementById("testeRegUser").addEventListener("click", ()=>{
     document.getElementById("userReg").value=""
     document.getElementById("pass1").value="testeuser"
@@ -9,9 +9,19 @@
     document.getElementById("ButtonRegister").click()
     })
 // -------------- //
+
+//Botao número 2:
+//Este botão testa se a aplicação aceita uma senha sem preenchimento
+    document.getElementById("testeRegPass").addEventListener("click", ()=>{
+    document.getElementById("userReg").value="caio"
+    document.getElementById("pass1").value=""
+    document.getElementById("pass2").value="testeuser"
+    document.getElementById("ButtonRegister").click()
+    })
+// -------------- //
+
     document.getElementById("ButtonRegister").addEventListener("click", ()=>{
     var userReg = document.getElementById("userReg").value
-    console.log(userReg)
     var pass1 = document.getElementById("pass1").value
     var pass2 = document.getElementById("pass2").value
     if(userReg != ""){
