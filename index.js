@@ -9,11 +9,11 @@
 })
 
 // CRIAR MAIS UMA LINHA
-        function addLine(event){
-        var ct = event.parentElement
-        var inp = ct.querySelector(".inputapaga").cloneNode(true)
-        inp.querySelector("input").value=""
-        ct.prepend(inp)
+    function addLine(event){
+    var ct = event.parentElement
+    var inp = ct.querySelector(".inputapaga").cloneNode(true)
+    inp.querySelector("input").value=""
+    ct.prepend(inp)
     }
 
 //  CRIAR MAIS UMA COLUNA
@@ -24,12 +24,28 @@
     addList.className="list"
     list.parentElement.insertBefore(addList, list)
 } 
- 
+
+//  Botão para testar a funcionalidade "deletar uma linha"
+    document.getElementById("teste3").addEventListener("click", ()=>{
+    document.getElementById("deletaLinha").click()
+    })
+
+//  Botão para testar a funcionalidade "deletar uma coluna"
+    document.getElementById("teste4").addEventListener("click", ()=>{
+    document.getElementById("deletaList").click()
+    })
+
 //  Permite a edição do input
     function addInput(event){
-        event.removeAttribute("readonly")
+    event.removeAttribute("readonly")
     }
+
 //  Bloqueia o input novamente
     function removeFocus(event){
-        event.readOnly="readonly"
+    event.readOnly="readonly"
     }
+
+//  Remove uma linha / coluna
+    function removeLinha(event){
+    event.parentElement.remove()
+}
